@@ -1,19 +1,22 @@
 // _LAYOUT.SCSS en donde se encontrarán las clases relacionadas con el layout de nuestra aplicación como el grid que estemos empleando
 
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-image: url("../assets/images/background-image.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 header {
-    height: auto;
+    padding: 1rem 0;
 }
 nav ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-
 
 main {
     max-width: 1728px;
@@ -22,15 +25,16 @@ main {
     display: flex;
     flex: 1 0 auto;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 3rem auto;
-
 }
 
 section {
     display: flex;
-    justify-content: space-evenly;   
-    gap: 1rem; 
+    justify-content: space-evenly;
+    gap: 1rem;
+    height: 440px;
 }
 
 article {
@@ -38,10 +42,45 @@ article {
     max-width: 293px;
 }
 
-
 footer {
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem 0;
 }
+
+// // Crear Mixin
+// @mixin nombreMixin(){
+//     background-color: orange;
+// }
+
+// @mixin mixinConUnArgumento($argumento1){
+//     color: $argumento1;
+// }
+
+// @mixin mixinConDosArgumento($argumento1, $argumento2, $argumento3){
+//     color: $argumento1;
+//     font-weight: $argumento2;
+//     font-size: $argumento3;
+// }
+// // Usar Mixin
+// p {
+//     @include nombreMixin();
+//     @include mixinConUnArgumento(black);
+//     @include mixinConDosArgumento(red, bold, 2em)
+// }
+
+// // Responsive
+// @mixin movil(){
+//     @media screen and (max-width: 400px) {
+//         @content;
+//     }
+// }
+
+// p{
+//     font-size: 4em;
+//     @include movil(){
+//         font-size: 2em;
+//     }
+// }
