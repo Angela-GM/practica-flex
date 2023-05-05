@@ -1,0 +1,7 @@
+main {
+    background-color: map-get($colores, 'negro' );
+    color: map-get($colores, 'blanco' );
+}
+article {
+    border: 4px solid map-get($colores , 'blanco' );
+}

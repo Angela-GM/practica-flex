@@ -1,0 +1,4 @@
+// _COMPONENTS.SCSS que se encargará de importar los componentes que necesitemos de la carpeta components . Estos componentes se corresponden con elementos como botones, barra de navegación, jumbos…
+@import './components/header';
+@import './components/main';
+@import './components/footer'

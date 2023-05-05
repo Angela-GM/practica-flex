@@ -1,0 +1,24 @@
+// _BASE.SCSS donde aparecerán los resets, las variables, los mixins que necesitemos y las clases de utilidades
+$colores: (
+    "negro": black,
+    "blanco": white,
+    "naranja": #FD7D54,
+    "azul": #41C3F6,
+    
+);
+
+$fuentes: (
+    "normal":'Montserrat',
+);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: 1px solid blue;
+}
+body {
+    font-family: map-get($fuentes, "normal");
+    color: map-get($colores, "negro");
+}
