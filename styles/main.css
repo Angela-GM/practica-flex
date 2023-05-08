@@ -90,6 +90,7 @@ section article {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  padding: 1.5rem;
 }
 section article h2 {
   text-align: center;
