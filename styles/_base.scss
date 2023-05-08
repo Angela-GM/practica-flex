@@ -21,3 +21,15 @@ body {
     font-family: map-get($fuentes, "normal");
     color: map-get($colores, "negro");
 }
+
+a {
+    text-decoration: none;
+    letter-spacing: 0.12em;
+    color: map-get($colores, azul);
+    &:hover {
+        color: map-get($colores, naranja);
+    }
+    &:active {
+        color: map-get($colores, azul);
+    }
+}

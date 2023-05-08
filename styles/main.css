@@ -11,6 +11,18 @@ body {
   color: black;
 }
 
+a {
+  text-decoration: none;
+  letter-spacing: 0.12em;
+  color: #41c3f6;
+}
+a:hover {
+  color: #fd7d54;
+}
+a:active {
+  color: #41c3f6;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -32,7 +44,6 @@ nav ul {
 }
 
 main {
-  max-width: 1728px;
   width: 80vw;
   height: calc(100vh - (headerHeight + footerHeight));
   display: flex;
@@ -80,6 +91,9 @@ section article {
   justify-content: space-evenly;
   align-items: center;
 }
+section article h2 {
+  text-align: center;
+}
 
 h1 {
   color: #fd7d54;
@@ -87,6 +101,16 @@ h1 {
   letter-spacing: 0.3em;
   font-size: 3em;
   font-weight: 800;
+}
+
+div > h1,
+p {
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+
+main > div {
+  margin-bottom: 2.5rem;
 }
 
 footer {
